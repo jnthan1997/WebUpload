@@ -37,7 +37,7 @@ async function fetchVideos() {
         title.innerText = video.title;
         
         const thumbnail = document.createElement('img');
-        thumbnail.src = video.thumbnail ? `http://localhost:4000/thumbnail/${video._id}` : 'default-thumbnail.jpg';
+        thumbnail.src = video.thumbnail ? http://localhost:4000/thumbnail/${video._id} : 'default-thumbnail.jpg';
         thumbnail.width = 150;
         thumbnail.height = 100;
         thumbnail.style.cursor = 'pointer';
@@ -51,9 +51,10 @@ async function fetchVideos() {
 
 function playVideo(videoId) {
     const player = document.getElementById('videoPlayer');
-    player.src = `http://localhost:4000/video/${videoId}`;
+    player.src = http://localhost:4000/video/${videoId};
     player.style.display = 'block';
     player.play();
 }
 
 window.onload = fetchVideos;
+
