@@ -51,7 +51,7 @@ async function fetchVideos() {
 
 function playVideo(videoId) {
     const player = document.getElementById('videoPlayer');
-    player.src = http://localhost:4000/video/${videoId};
+    player.src = `http://localhost:4000/video/${videoId};`
     player.style.display = 'block';
     player.play();
 }
